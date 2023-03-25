@@ -26,8 +26,8 @@ extern crate rsa;
 extern crate rand;
 
 use rsa::{
-    pkcs1::{DecodeRsaPrivateKey, DecodeRsaPublicKey, EncodeRsaPrivateKey, EncodeRsaPublicKey, LineEnding},
-    PublicKey, RsaPrivateKey, RsaPublicKey, Pkcs1v15Encrypt
+    pkcs1::{EncodeRsaPrivateKey, EncodeRsaPublicKey, LineEnding},
+    RsaPrivateKey, RsaPublicKey
 };
 
 fn main() {
@@ -53,6 +53,7 @@ fn main() {
 
 ```
 cd pkg
+npm login
 npm publish --access=public
 ```
 
